@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password generator</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <h1>Password <span>generator</span></h1>
+        <div class="options">
+            <div class="checkboxes">
+                <div class="pair">
+                    <input type="checkbox" id="upper" name="upper" checked>
+                    <label for="upper">Upper case</label>
+                </div>
+                <div class="pair">
+                    <input type="checkbox" id="lower" name="lower" checked>
+                    <label for="lower">Lower letters</label>
+                </div>
+                <div class="pair">
+                    <input type="checkbox" id="symbols" name="symbols" checked>
+                    <label for="symbols">Symbols</label>
+                </div>
+                <div class="pair">
+                    <input type="checkbox" id="numbers" name="numbers" checked>
+                    <label for="numbers">Numbers</label>
+                </div>
+            </div>
+            <input type="range" min="10" max="30" value="20" class="slider" id="myRange">
+            <p id="sliderValue">Password length: 15</p>
+        </div>
+        <div class="output">
+            <div class="output-container">
+                <input type="text" id="outputPassword">
+                <i class="fa-solid fa-copy" onclick="copy()"></i>
+            </div>
+            <button id="generate-btn">Generate</button>
+        </div>
+    </div>
+</body>
+</html>

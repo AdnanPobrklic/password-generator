@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Arial Narrow Bold', sans-serif;
+    background-color: lightblue;
+}
+
+.container {
+    width: 90%;
+    margin: 5% auto;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container h1{
+    font-size: 4rem;
+}
+
+.container h1 span{
+    color: cadetblue;
+}
+
+.options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    gap: 25px;
+    font-size: 2rem;
+}
+
+.checkboxes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.slider {
+    -webkit-appearance: none;  
+    appearance: none;
+    width: 100%; 
+    max-width: 800px;
+    height: 30px;
+    background: whitesmoke; 
+    outline: none;
+    opacity: 0.7;  
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+  
+.slider:hover {
+    opacity: 1; 
+}
+  
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 30px; 
+    height: 30px; 
+    background: black; 
+    cursor: pointer; 
+}
+  
+.slider::-moz-range-thumb {
+    width: 30px; 
+    height: 30px; 
+    background: black; 
+    cursor: pointer; 
+}
+
+.output{
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.output-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.output-container input {
+    width: 80%;
+    height: 50px;
+    text-align: center;
+    font-size: 1.5rem;
+    border: 3px solid black;
+}
+
+.output-container i {
+    font-size: 1.5rem;
+}
+
+.output-container i:hover {
+    cursor: copy;
+    opacity: 0.8;
+}
+
+.output button{
+    background-color: cadetblue;
+    color: black;
+    border: none;
+    width: 25%;
+    height: 40px;
+    min-width: 150px;
+    font-size: 1.5rem;
+    border: 3px solid black;
+}
+
+.output button:hover{
+    opacity: 0.8;
+    background-color: white;
+    cursor: pointer;
+    transition: 200ms all ease-in-out;
+}
+
+@media all and (max-width: 700px) {
+    .container h1{
+        font-size: 3rem;
+    }   
+    .options{
+        font-size: 1.4rem;
+    } 
+    .output-container input {
+        font-size: 1rem;
+    }
+}
+
+@media all and (max-width: 520px) {
+    .container h1{
+        font-size: 2rem;
+    }    
+    .output-container input {
+        font-size: 0.85rem;
+    }
+}
+
+@media all and (max-width: 370px) {
+    .container h1{
+        font-size: 1.7rem;
+    }    
+    .output-container input {
+        font-size: 0.68rem;
+    }
+}
