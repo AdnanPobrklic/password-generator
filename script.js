@@ -16,13 +16,17 @@ let combined = ''
 setInterval(updateValue, 100)
 
 generateBtn.addEventListener('click',() => {
-    checkCheckboxValues()
-    let password = ''
-    for(let i = 0; i < slider.value; i++){
-        let randomNum = Math.floor(Math.random() * combined.length)
-        password += combined[randomNum]
+    if(upperCheckbox.checked || lowerCheckbox.checked || symbolsCheckbox.checked || numbersCheckbox.checked ){
+        checkCheckboxValues()
+        let password = ''
+        for(let i = 0; i < slider.value; i++){
+            let randomNum = Math.floor(Math.random() * combined.length)
+            password += combined[randomNum]
+        }
+        outputPassword.value = password
+    }else{
+        alert('Check at least one option')
     }
-    outputPassword.value = password
 })
 
 function checkCheckboxValues(){
