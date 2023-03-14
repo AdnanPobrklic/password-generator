@@ -133,6 +133,7 @@ body{
 @media all and (max-width: 700px) {
     .container h1{
         font-size: 3rem;
+        text-align: center;
     }   
     .options{
         font-size: 1.4rem;
