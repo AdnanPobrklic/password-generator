@@ -11,14 +11,10 @@ In order to run this project on your local machine, you need to have a web brows
 Installing
 
     Clone the repository using Git:
-
-    bash
-
+    
 git clone https://github.com/yourusername/password-generator.git
 
 Navigate to the project directory:
-
-bash
 
     cd password-generator
 
