@@ -12,9 +12,9 @@ This is a simple web application that generates strong, random passwords. The ap
 
     `cd password-generator`
 
-Open index.html in your web browser to view the application.
+3. Open index.html in your web browser to view the application.
 
-Built With
+## Built With
     - HTML
     - CSS
     - JavaScript
