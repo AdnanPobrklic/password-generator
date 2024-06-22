@@ -4,21 +4,15 @@ This is a simple web application that generates strong, random passwords. The ap
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
-Prerequisites
-
-In order to run this project on your local machine, you need to have a web browser installed.
-Installing
-
-    Clone the repository using Git:
+1. Clone the repository using Git:
     
-git clone https://github.com/yourusername/password-generator.git
+    `git clone https://github.com/yourusername/password-generator.git`
 
-Navigate to the project directory:
+2. Navigate to the project directory:
 
-    cd password-generator
+    `cd password-generator`
 
-    Open index.html in your web browser to view the application.
+Open index.html in your web browser to view the application.
 
 Built With
     - HTML
